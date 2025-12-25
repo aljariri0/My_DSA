@@ -8,13 +8,14 @@
 #include "clsTree.h"
 #include "Sort_Algorithms/bubble_sort.h"
 #include "Sort_Algorithms/insertion_sort.h"
+#include "Sort_Algorithms/selection_sort.h"
 
 using namespace std;
 
 int main()
 {
     int arr[] = {8, 5, 7, 3, 2};
-    InsertionSort s(arr, 5);
+    SelectionSort s(arr, 5);
 
     s.Display();
     s.Sort();
