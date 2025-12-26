@@ -1,7 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include "Sort_Algorithms/good_functions.h"
+#include "good_functions.h"
 using namespace std;
 
 class BubbleSort
