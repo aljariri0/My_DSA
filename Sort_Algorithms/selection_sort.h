@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include "Sort_Algorithms/good_functions.h"
 using namespace std;
 
 class SelectionSort
@@ -18,14 +19,6 @@ public:
         element = arr;
     }
 
-    void Swap(int &a, int &b)
-    {
-
-        int temp = a;
-        a = b;
-        b = temp;
-    }
-
     void Sort()
     {
 
@@ -39,7 +32,7 @@ public:
                     k = j;
             }
 
-            Swap(element[i], element[k]);
+            GoodFunctions::Swap(element[i], element[k]);
         }
     }
 
@@ -51,5 +44,5 @@ public:
         }
 
         cout << "\n";
-        }
+    }
 };

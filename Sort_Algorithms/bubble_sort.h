@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include "Sort_Algorithms/good_functions.h"
 using namespace std;
 
 class BubbleSort
@@ -18,14 +19,6 @@ public:
         element = arr;
     }
 
-    void Swap(int &a, int &b)
-    {
-
-        int temp = a;
-        a = b;
-        b = temp;
-    }
-
     void Sort()
     {
         int flag = 0;
@@ -40,7 +33,7 @@ public:
                 if (element[j] > element[j + 1])
                 {
 
-                    Swap(element[j], element[j + 1]);
+                    GoodFunctions::Swap(element[j], element[j + 1]);
                     flag = 1;
                 }
             }

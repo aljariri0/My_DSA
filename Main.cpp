@@ -14,10 +14,6 @@ using namespace std;
 
 int main()
 {
-    int arr[] = {8, 5, 7, 3, 2};
-    SelectionSort s(arr, 5);
-
-    s.Display();
-    s.Sort();
-    s.Display();
+    int arr1[] = {2, 10, 18, 20, 23};
+    int arr2[] = {4, 9, 19, 25};
 }
